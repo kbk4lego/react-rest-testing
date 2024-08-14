@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+import "../styles/style.bundle.css"
 
 function Sidebar() {
   return (
-    <div className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark h-100" style={{width: "280px"}}>
+    <div className="app-sidebar flex-column" style={{width: "280px"}}>
       <Link to="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
         <svg className="bi me-2" width="40" height="32"><use href="#bootstrap"></use></svg>
         <span className="fs-4">Sidebar</span>
